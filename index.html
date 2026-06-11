@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Agrinho 2026 - Preservação de Nascentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-menu" role="region" aria-label="Controles de Acessibilidade">
+        <button id="btn-increase-font" aria-label="Aumentar texto">A+</button>
+        <button id="btn-decrease-font" aria-label="Diminuir texto">A-</button>
+        <button id="btn-toggle-contrast" aria-label="Alternar Alto Contraste">Contraste</button>
+        <button id="btn-tts-start" aria-label="Ouvir texto">Ouvir</button>
+        <button id="btn-tts-stop" aria-label="Parar leitura de voz">Parar</button>
+    </div>
+
+    <header class="main-header">
+        <h1>Concurso Agrinho 2026 - "Agroforte, futuro sustentável: equilíbrio entre produção e meio ambiente"</h1>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Produção Leiteira Sustentável e a Proteção das Águas</h2>
+                <p>Descubra como a inovação e o respeito ao meio ambiente transformam a realidade da agropecuária em Pitanga, garantindo o futuro das nossas nascentes.</p>
+                <a href="#inscricao" class="btn-cta">Participe do Seminário</a>
+            </div>
+        </section>
+
+        <section class="narrative-section">
+            <h2>Nossa História: Família Silva e a Transformação Verde</h2>
+            <p>Morando em Pitanga, no coração do Paraná, nossa família sempre viveu da produção leiteira. No início, não tínhamos a dimensão de como pequenas ações no manejo do gado impactavam diretamente as fontes de água da nossa propriedade. Com o passar dos anos e o suporte técnico adequado, compreendemos que proteger as nascentes não era apenas um dever ecológico, mas a garantia da sobrevivência do nosso próprio negócio.</p>
+            
+            <p>Implementamos o cercamento completo das áreas de preservação permanente (APPs), plantamos mudas nativas ao redor dos olhos d'água e adotamos o sistema de piquetes rotacionados para evitar o pisoteio do solo perto dos córregos. O resultado foi imediato: a água voltou a correr limpa, abundante, e a saúde do nosso rebanho melhorou significativamente com o acesso a bebedouros distantes das áreas vulneráveis.</p>
+            
+            <p class="highlight-text">"O agronegócio é o verdadeiro motor da economia paranaense, sendo essencial para o desenvolvimento local e regional. Ele movimenta o comércio, gera milhares de empregos no campo e na cidade, e atrai investimentos em infraestrutura. Graças à agroindústria e à agricultura familiar, diversas cidades do interior prosperam com autonomia financeira. O agronegócio impulsiona a inovação tecnológica, melhora a renda dos produtores e garante a segurança alimentar. No cenário regional, essa potência produtiva transforma o estado em um gigante exportador, fortalecendo a balança comercial e elevando a qualidade de vida da população paranaense de forma sustentável."</p>
+        </section>
+
+        <section class="image-gallery-section">
+            <div class="imagem"> 
+                <img src="Foto1.png" alt="Área de preservação ambiental cercada ao redor de uma nascente de água límpida na propriedade da Família Silva em Pitanga."> 
+            </div>
+        </section>
+
+        <section class="accordion-section">
+            <h2>Práticas Sustentáveis da Agropecuária Leiteira</h2>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Cercamento e Proteção de APPs</span>
+                        <span class="icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Isolar o gado das áreas de nascentes evita a compactação do solo, o assoreamento dos rios e a contaminação da água por dejetos, permitindo que a vegetação nativa se regenere por completo.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Plantio de Matas Ciliares</span>
+                        <span class="icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>A recomposição da flora original atua como um filtro natural, retendo sedimentos e nutrientes excessivos da chuva, além de manter a umidade do solo e regular o fluxo hídrico.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Sistemas de Bebedouros Distantes</span>
+                        <span class="icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Instalar encanamentos e bebedouros mecânicos nas áreas de pastagem garante água de qualidade para os animais sem que eles precisem descer até os córregos naturais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-gallery-section">
+            <div class="imagem"> 
+                <img src="Foto2.png" alt="Gado leiteiro pastando em sistema rotacionado com bebedouro artificial ao fundo, preservando o meio ambiente."> 
+            </div>
+        </section>
+
+        <section class="interactive-grid">
+            <div class="comments-component">
+                <h3>Comunidade e Ideias</h3>
+                <p>Deixe sua sugestão ou relato sobre como você preserva o meio ambiente na sua região.</p>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label id="label-comment" for="input-comment">Seu Comentário:</label>
+                        <textarea id="input-comment" placeholder="Escreva aqui sua mensagem..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+                <div id="comments-list" class="comments-output" aria-live="polite"></div>
+            </div>
+
+            <div id="inscricao" class="form-component">
+                <h3>Entre em contato</h3>
+                <p>Inscreva-se no nosso seminário on-line</p>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Saiba mais sobre essa experiência</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-tagline">AgroFuturo 2026 ° Conectando a inteligência tecnologia à terra de forma sustentável</p>
+        <div class="footer-references">
+            <p><strong>Referências de pesquisa:</strong></p>
+            <ul>
+                <li><a href="https://www.sistemafaep.org.br" target="_blank" rel="noopener">Sistema FAEP/SENAR-PR - Programa Agrinho</a></li>
+                <li><a href="https://www.embrapa.br" target="_blank" rel="noopener">Embrapa Gado de Leite - Práticas Sustentáveis</a></li>
+                <li><a href="https://www.iat.pr.gov.br" target="_blank" rel="noopener">Instituto Água e Terra (IAT) - Proteção de Nascentes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
